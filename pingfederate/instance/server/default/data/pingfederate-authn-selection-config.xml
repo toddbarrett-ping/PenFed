@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urn:AuthnSelectionConfig lastModifiedMillis="1608569829161" enableAuthnSelection="true" enableSpAuthnSelection="true" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
+<urn:AuthnSelectionConfig lastModifiedMillis="1608614508351" enableAuthnSelection="true" enableSpAuthnSelection="true" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
     <urn:AuthnSelectionTrees>
         <urn:AuthnSelectionTree treeName="Sample AuthN Experience Policy" disabled="false" authnApiApp="">
             <urn:AstRoot context="">
@@ -189,7 +189,7 @@
 * Passwordless (ID-First + MFA)
 * Admins (Employee HTML Form)</urn:treeDescription>
         </urn:AuthnSelectionTree>
-        <urn:AuthnSelectionTree treeName="Sample AuthN API Policy" disabled="false" authnApiApp="VCiDjqXR24YtfqHRDzKEPdMfQ">
+        <urn:AuthnSelectionTree treeName="Sample AuthN API Policy" disabled="true" authnApiApp="VCiDjqXR24YtfqHRDzKEPdMfQ">
             <urn:AstRoot context="">
                 <urn:AstAction authnSelectorId="authnApi" xsi:type="urn:AuthnSelectorActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
                 <urn:AstChild context="API">
@@ -302,7 +302,7 @@ MFA
 Google
 Facebook</urn:treeDescription>
         </urn:AuthnSelectionTree>
-        <urn:AuthnSelectionTree treeName="Fallback Policy" disabled="false" authnApiApp="">
+        <urn:AuthnSelectionTree treeName="Fallback Policy" disabled="true" authnApiApp="">
             <urn:AstRoot context="">
                 <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                     <urn:AuthnSourceKey type="ADAPTER">ciamHTMLForm</urn:AuthnSourceKey>
@@ -421,7 +421,7 @@ Facebook</urn:treeDescription>
             </urn:AstRoot>
             <urn:treeDescription>This Policy is invoked by applications that have not matched to the Extended Properties Selector (e.g. Profile Management)</urn:treeDescription>
         </urn:AuthnSelectionTree>
-        <urn:AuthnSelectionTree treeName="Forgot Password" disabled="false" authnApiApp="">
+        <urn:AuthnSelectionTree treeName="Forgot Password" disabled="true" authnApiApp="">
             <urn:AstRoot context="">
                 <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                     <urn:AuthnSourceKey type="ADAPTER">ciamMFA</urn:AuthnSourceKey>
@@ -444,7 +444,7 @@ Facebook</urn:treeDescription>
             </urn:AstRoot>
             <urn:treeDescription>Policy Used to allow CIAM MFA to be used for Self-Service Password Reset actions</urn:treeDescription>
         </urn:AuthnSelectionTree>
-        <urn:AuthnSelectionTree treeName="IIS" disabled="false" authnApiApp="">
+        <urn:AuthnSelectionTree treeName="IIS" disabled="true" authnApiApp="">
             <urn:AstRoot context="">
                 <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                     <urn:AuthnSourceKey type="ADAPTER">ciamHTMLForm</urn:AuthnSourceKey>
